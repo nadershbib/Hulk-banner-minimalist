@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Permanent+Marker&display=swap');
+.banner{
+    height: 100vh;
+    
+    background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.85)),url('./146393.jpg')center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+}
+
+.banner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: show 10s ease-in-out 1;
+    
+}
+
+@keyframes show{
+    
+    0%{
+        background: black;
+    }
+    
+    100%{
+        background: none;
+    } 
+}
+
+
+.banner h1{
+    font-family: 'Orbitron', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #ffff;
+    animation: show-text 6s ease-in-out 1 forwards;
+    
+}
+
+
+
+
+
+.HULK{
+    color: rgb(39, 124, 39);
+}
+
+
+
+@keyframes show-text{
+    0%{
+        font-size: 0px;
+        opacity: 0;
+    }
+    
+    20%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+        font-size: 74px;
+    }
+     
+}
+
+@media(max-width:560px){
+    
+
+    @keyframes show-text{
+        0%{
+            font-size: 0px;
+            opacity: 0;
+        }
+        
+        20%{
+            opacity: 0.3;
+        }
+        100%{
+            opacity: 1;
+            font-size: 44px;
+        }
+         
+    }
+}
+
+
